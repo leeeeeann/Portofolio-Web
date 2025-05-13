@@ -1,0 +1,609 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Halaman home dengan latar belakang biru muda */
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url('assets/backgroundmain.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px; /* Sesuaikan dengan tinggi navbar */
+}
+
+
+/* Navbar dengan latar belakang biru tua */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 8%;
+  background-color: #071739;
+  z-index: 100;
+}
+
+
+/* Logo */
+.logo {
+  color: white;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+span {
+  color: #E3C39D;
+}
+
+/* Daftar navbar */
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 25px;
+}
+
+/* Tautan navbar */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+/* Efek hover untuk tautan navbar */
+nav ul li a:hover {
+  color: #E3C39D;
+  transition: .4s;
+}
+
+/* Konten hero */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+
+/* Gaya untuk h1 */
+h1 {
+  color: white;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+
+/* Gaya untuk h3 */
+h3 {
+  color: beige;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+/* Gaya untuk h4 */
+h4 {
+  color: beige;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+
+
+@media (min-width: 1200px) {
+  .newsletter form {
+      margin-right: 40px;
+  }
+}
+
+.about {
+  width: 100%;
+  height: fit-content;
+  padding: 150px 0px;
+  background-image: url('assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-text {
+  width: 700px;
+  margin-left: 40%;
+  text-align: justify;
+}
+.main {
+  width: 1150px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2 {
+  padding-top: 10%;
+  color: white;
+  font-size: 75px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h4 {
+  color: white;
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.about-text h5 {
+  color: #071739;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+
+}
+button {
+  background-color: white;
+  color: #071739;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid #071739;
+  cursor: pointer;
+}
+
+
+.service {
+  background-image: url('assets/backgroundskill.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 120px;
+}
+.title h2 {
+  padding-top: 3%;
+  font-size: 75px;
+  width: 1130px;
+  margin: 30px auto;
+  text-align: center;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card {
+  height: 365px;
+  width: 500px;
+  padding: 10px;
+  background: white;
+  border-radius: 20px;
+  margin: 50px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.card i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 30px 0px;
+  color: white;
+}
+h5 {
+  margin-top: 30px;
+  color: #071739;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra p {
+  color: #071739;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Jarak antara ikon dan teks */
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #071739;
+  justify-content: center;
+}
+.material-symbols-outlined {
+  font-size: 20px;
+  color: #071739;
+}
+
+.card .button {
+  background-color: #071739;
+  color: #e4d4b8;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 30px;
+  border-radius: 30px;
+  transition: .4s;
+}
+.card .button:hover {
+  background-color: transparent;
+  border: 2px solid #071739;
+  cursor: pointer;
+}
+
+
+
+
+
+
+.skills {
+  width: 100%;
+  background-image: url('assets/backgroundexp.png');
+  background-size: cover;
+  background-position: center;
+  padding: 110px 2px;
+}
+
+.box-right-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 80px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* KIRI: Card */
+.right-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-height: 470px;
+  max-width: 1500px; /* Batasi lebar agar tidak terlalu besar */
+}
+
+/* Card Style */
+.card2 {
+  width: 395px;
+  gap: 50px;
+  height: 400px;
+  padding: 30px;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden; /* Membantu menjaga border tetap bersih */
+  text-align: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* KANAN: Teks */
+.left-text {
+  flex: 1;
+  color: #071739;
+  min-width: 300px;
+  text-align: left;
+  padding-left: 130px;
+  padding-top: 60px;
+}
+
+.left-text h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.left-text h2 {
+  color: #071739     ;
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 0.7;
+  padding-bottom: 10%; /* mengurangi jarak antar baris */
+}
+
+.left-text h2 .line1,
+.left-text h2 .line2 {
+  display: block;
+  color: #ffffff;
+}
+
+
+.right-cards-wrapper {
+  display: flex;
+  align-items: center;
+  width: 922px;
+  max-height: 470px;
+  overflow: hidden;
+}
+
+
+.right-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; /* Jangan wrap agar bisa scroll */
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.right-cards::-webkit-scrollbar {
+  display: none; /* untuk Chrome dan Safari */
+}
+
+.arrow {
+  background: none;
+  color: #071739;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.left-arrow {
+  margin-right: 10px;
+}
+
+.right-arrow {
+  margin-left: 10px;
+}
+
+.card2 img.card-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card2 h5 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card2 .button {
+  background-color: #071739;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card2 .button:hover {
+  background-color: transparent;
+  border: 2px solid #071739;
+  color: #071739;
+  cursor: pointer;
+}
+.left-text .desc {
+  font-size: 16px;
+  color: #fffdfd;
+  line-height: 1.6;
+  max-width: 400px;
+  text-align: justify;
+}
+.card2:hover {
+  transform: scale(1.05); /* Membesarkan card */
+  transform-origin: center center; /* Membesarkan card dari tengah */
+  z-index: 10;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+
+
+
+.contact-us {
+  padding: 80px 20px;
+  background-color: #071739;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  color: #071739;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  font-size: 40px;
+  color: #071739;
+  margin-bottom: 15px;
+}
+
+.contact-card p {
+  font-size: 14px;
+  color: #071739;
+  margin-bottom: 15px;
+}
+
+.contact-card .button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #071739;
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.contact-card .button:hover {
+  background-color: transparent;
+  border: 2px solid #071739;
+  color: #071739;
+}
+
+.contact-title {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+
+/* Styling for Footer */
+footer {
+  padding-top: 2.5%;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #071739;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p:nth-child(1) {
+  font-size: 17px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+footer p:nth-child(2) {
+  font-size: 17px;
+  color: rgb(18, 9, 46);
+  width: 500px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.social {
+  display: flex;
+}
+
+.social a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: rgb(18, 9, 46);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social a:hover {
+  transform: scale(1.3);
+  transition: .3s;
+}
+
+.end {
+  position: absolute;
+  color: rgb(18, 9, 46);
+  bottom: 35px;
+  font-size: 14px;
+}
+
+/* Popup Modal Style */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.repo-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #24292e;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.repo-button:hover {
+  background-color: #444c56;
+}
+
+
+/* Optional fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+
+
+
+
+
